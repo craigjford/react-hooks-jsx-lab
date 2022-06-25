@@ -1,14 +1,17 @@
 import React from "react";
-import { name, city } from "../data/data.js";
+import { name, city } from "../data/data.js"
 
 function Home() {
   // update the JSX being returned!
-  const divStyle = {
-    color: "firebrick"
-  }
-  return <div id="home" style={divStyle}>
-      <h1>{ name } is a Web Developer From { city }</h1>
-    </div>;
+  const mystyle = {
+    color: "firebrick",
+  };
+  console.log('name and city = ', name, city)
+  return ( 
+    <div id="home">
+      <h1 style={mystyle}>{name} is a Web Developer from {city}</h1>
+    </div>
+  )
 }
 
 export default Home;
